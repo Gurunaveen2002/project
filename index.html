@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="style.css">
+
+
+        
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    }
+    span{
+        font-size: 10px;
+        
+    }
+
+
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   
+  }
+  
+  nav {
+    background-color: rgb(145, 151, 145);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    margin-right: 20px;
+  }
+  
+  ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  ul li a:hover {
+    color: lightgreen;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+    
+  }
+  
+  @media (max-width: 768px) {
+    .checkbtn {
+      display: block;
+      order: 1;
+      margin-right: 20px;
+     
+    }
+  
+    ul {
+      position: fixed;
+     
+      top: 80px;
+      right: -100%;
+      background-color: black;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+    }
+  
+    ul li {
+      margin: 20px 0;
+    }
+  
+    ul li a {
+      font-size: 20px;
+    }
+  
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
+  
+  
+  
+
+
+.el16{
+    border: 1px solid black;
+    height: 100vh;
+}
+.el1{
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    /* background-color: blue; */
+    position: sticky;
+    top: 0; 
+    /* background-color: gray; */
+    /* padding: 30px;
+    z-index: 1000; */
+    /* background-color: white; */
+    
+
+    
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+.el4{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 20px;
+} 
+.el4a{
+   padding-left: 50px;
+   
+}
+.nb1,.nb2,.nb3{
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid rgb(207, 199, 199);
+    padding-bottom: 10px;
+    align-items: center;
+}
+.el7b{
+    display: flex;
+
+    gap: 30px;
+   border-bottom: 1px solid rgb(216, 208, 208);
+   width: 30%;
+   justify-content: center;
+   align-items: center;
+margin-left: 35%;
+margin-top: 20px;
+  
+    
+}
+/* .el2a{
+    filter:opacity(3);
+    opacity:70% ;
+} */
+.man{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 100px;
+    padding-right: 50px;
+    gap: 40px;
+   
+}
+.np1,.np2,.np3,.np4,.np5,.np6{
+    display: flex;
+    gap: 150px;
+    padding: 10px;
+    font-size: 2px;
+}
+
+.np1>h4{
+font-size: 20px;
+}
+.np2>h4{
+font-size: 20px;
+}
+.np3>h4{
+font-size: 20px;
+}
+.np4>h4{
+font-size: 20px;
+}
+.np5>h4{
+font-size: 20px;
+}
+.np6>h4{
+font-size: 20px;
+}
+
+
+
+
+.man1{
+box-shadow: 1px 1px 3px ;
+width: 344px;
+height: 430px;
+
+}
+.man2{
+    box-shadow: 1px 1px 3px; 
+    width: 390px; 
+    height: 365px;
+}
+.man3{
+    box-shadow: 1px 1px 3px; 
+    width: 340px; 
+    height: 380px;
+}
+.man4{
+    box-shadow: 1px 1px 3px;  
+    width: 340px;
+    height: 380px;
+}
+.man5{
+    box-shadow: 1px 1px 3px;  
+    width: 390px;
+    height: 480px;
+    
+}
+.man6{
+    box-shadow: 1px 1px 3px; 
+    width: 345px; 
+    height: 480px;
+}
+.el7b>a{
+    text-decoration: none;
+}
+
+.el8a{
+    display: flex;
+    /* border: 1px solid black; */
+    border-bottom: 1px solid rgb(195, 190, 190);
+    border-top: 1px solid  rgb(195, 190, 190);
+    justify-content: space-between;
+    padding: 40px;
+    margin: 120px;
+    align-items: center;
+    color:  rgb(130, 127, 127); ;
+}
+.el2>h2{
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    font-size: 50px;
+}
+.el2>p{
+    position: absolute;
+    top: 65%;
+    left: 33%;
+    width: 500px;
+}
+.el2>button{
+    position: absolute;
+    top: 73%;
+    left: 43%;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(222, 147, 100);
+    border: none;
+}
+.el2>h4{
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    font-size: 20px;
+    color: rgb(222, 147, 100);
+}
+.el8a>button{
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+    width: 150px;
+    color:  rgb(130, 127, 127); ;
+}
+.el2{
+    position: relative;
+}
+
+.el9{
+    display: flex;
+   width: 100%;
+    gap: 150px;  
+}
+.el9a{
+    padding-top: 100px;
+    font-size: 20px;
+}
+.el10{
+    display: flex;
+    gap: 100px;
+    
+}
+.el10a{
+    padding-left: 70px;
+    padding-top: 100px;
+    font-size: 20px;
+}
+.el10a>p{
+    color: rgb(151, 147, 147);
+}
+.el9a>p{
+    color: rgb(151, 147, 147); 
+}
+
+.el9{
+    position:relative;
+}
+
+/* .best{   
+   position: absolute; 
+   bottom: 200px;
+   left: 15%;
+   font-size: 30px;
+   border: 2px solid white;
+   padding: 20px;
+   width: 180px;
+}
+.ladies{
+    position: absolute;
+    left: 70%;
+    bottom: 0%;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 20px;
+} */
+
+/* purchase */
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  
+  background-color: #f5f8ff !important;
+  
+}
+.box{
+    gap: 50px;
+}
+
+main {
+  margin: 8rem auto;
+
+  section {
+    background: linear-gradient(to bottom right, #c6fcff, #edbbff);
+    max-width: 1300px;
+    width: 100%;
+
+    @media (max-width: 1110px) {
+      width: 90%;
+    }
+
+    .box {
+      h4 {
+        color: #141843;
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-size: 1.625rem;
+        
+      }
+
+      p {
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: #141843;
+
+        span {
+          font-size: 3.875rem;
+          color: #141843;
+        }
+      }
+
+      .size {
+        font-size: 1rem;
+      }
+
+      .team-size {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: #141843;
+        max-width: 276px;
+        width: 100%;
+      }
+
+      button {
+        font-weight: 500;
+        max-width: 144px;
+        width: 100%;
+        transition: 0.3s ease;
+
+        &.start {
+          background-color: #edbbff;
+
+          &:hover {
+            background-color: darken(#edbbff, 10%);
+          }
+        }
+
+        &.standard {
+          background-color: #aef1f5;
+
+          &:hover {
+            background-color: darken(#aef1f5, 10%);
+          }
+        }
+
+        &.premium {
+          background-color: #ffddb6;
+
+          &:hover {
+            background-color: darken(#ffddb6, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.head{
+  position: sticky;
+  top: 0;
+}
+
+.man1{
+  background: linear-gradient(45deg
+  hsla(168,85%,52%,0.5),
+  hsla(263,88%,45%,0.5) 100% 
+  );
+  
+}
+
+.el13{
+  position: relative;
+}
+.el13a{
+  position: absolute;
+  left: 10%;
+  bottom: 25%;
+  width: 500px;
+}
+.mobile{
+  position: absolute;
+  left: 55%;
+  bottom: 0px;
+  width: 40%;
+  /* padding-right: 100px; */
+  
+}
+
+
+
+.el14 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .el14 div {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  button {
+    padding: 15px;
+    border-radius: 50px;
+    width: 200px;
+    background-color: rgb(179, 109, 62);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: rgb(150, 90, 50);
+  }
+
+  /* Media Queries */
+  @media (<576px) {
+    .el14 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    input, textarea {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .el14 div {
+      padding: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+
+
+.el14{
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.el14{
+  display: flex;
+  gap: 200px;
+  margin: 30px;
+}
+.el15{
+ background-image: url(image.avif);
+
+ background-repeat: no-repeat;
+ height: 80vh;
+
+}
+  .el15{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+  }
+  .end{
+    display: flex;
+  }
+
+  @media (width<576) {
+    .el14 {
+      display: block;
+  
+    
+    }
+  
+    .el14b {
+      
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    
+    }
+
+  }
+
+
+
+/* Default Styles */
+.el9, .el10 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.el9 img, .el10 img {
+    width: 50%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.el9a, .el10a {
+    width: 45%;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .el9, .el10 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .el9 img, .el10 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .el9a, .el10a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .el9, .el10 {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* Default Styles */
+.el15 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px;
+    padding-top: 100px;
+    gap: 30px;
+}
+
+.el15 > div {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+/* Social Icons */
+.el15 img {
+    margin: 5px;
+}
+
+/* Recent Posts & Projects */
+.el15 div {
+    text-align: left;
+}
+
+.el15 h4 {
+    margin-bottom: 15px;
+}
+
+.el15 .recent-posts, 
+.el15 .latest-projects {
+    padding-top: 50px;
+}
+
+/* Images inside Latest Projects */
+.el15 .latest-projects img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    /* .el15 {
+        flex-direction: column; */
+        align-items: center;
+        /* padding: 50px; */
+   
+
+
+
+
+
+
+    .el15 > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .el15 p {
+        font-size: 14px;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .el15 {
+        padding: 30px;
+    }
+
+    .el15 .recent-posts div,
+    .el15 .latest-projects div {
+        display: block;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+    }
+
+    .el15 .latest-projects img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .el15 h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .el15 {
+        padding: 20px;
+    }
+
+    .el15 h4 {
+        font-size: 16px;
+    }
+
+    .el15 p {
+        font-size: 12px;
+    }
+
+    .el15 .latest-projects img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
+
+
+
+
+/* Default Styles */
+.el3 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.el3 p {
+    width: 60%;
+    margin: auto;
+    font-size: 16px;
+}
+
+.el4 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px;
+}
+
+
+
+.el4 img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Service Box Styling */
+.nb1, .nb2, .nb3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nb1 img, .nb2 img, .nb3 img {
+    height: 50px;
+    width: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .el3 p {
+        width: 80%;
+      
+    }
+
+    .el4 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .el4 > div {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .el3 p {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .el4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .el4 > div {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .el3 p {
+        width: 95%;
+        font-size: 12px;
+    }
+
+    .el4 > div {
+        width: 100%;
+    }
+
+    .nb1, .nb2, .nb3 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nb1 img, .nb2 img, .nb3 img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Base Styles */
+.man {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.man5{
+  box-shadow: 1px 1px 3px ;
+}
+.man1, .man2, .man3, .man4, .man5, .man6 {
+  box-shadow: 1px 1px 3px;
+  margin-bottom: 20px; /* Add space between items */
+}
+
+.man1 {
+  width: 344px;
+  hieght: 430px;
+}
+
+.man2 {
+  width: 390px;
+  height: 365px;
+}
+
+.man3 {
+  width: 340px;
+  height: 380px;
+}
+
+.man4 {
+  width: 340px;
+  height: 380px;
+}
+
+.man5 {
+  width: 390px;
+  height: 430px;
+}
+
+.man6 {
+  width: 345px;
+  height: 480px;
+}
+
+.picture {
+  width: 100%;
+  height: auto;
+}
+
+.np1, .np2, .np3, .np4, .np5, .np6 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.el7b > a {
+  text-decoration: none;
+}
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .testimonial {
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            justify-content: center;
+            gap: 100px;
+        }
+        .carousel img {
+            width: 100px;
+            margin: 0 10px;
+        }
+
+
+        #image-container img {
+          
+            transition: filter 0.3s ease-in-out;
+        }
+
+        /* Change color using CSS filter on hover */
+        #image-container img:hover {
+            filter: hue-rotate(180deg) brightness(0.5);
+            
+            
+        }
+
+
+        .ns{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider-container {
+            width: 90%;
+            max-width: 100%;
+            text-align: center;
+            position: relative;
+           
+          
+            border-radius: 10px;
+            /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+        }
+
+        .testimonial {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .rating {
+            background: #c97a35;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            right: 640px;
+            font-weight: bold;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin: 10px 20px;
+            color: #555;
+        }
+
+        .author {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: -20px;
+        }
+
+        .next {
+            right: -20px;
+        }
+
+        .testimonial.active {
+            display: flex;
+        }
+
+
+        
+    </style>
+
+    </style>
+</head>
+<body>
+
+
+
+<div class="head">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/jevelin_weddings_light.png" alt=""></label>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="cards.html">Blog</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+    </nav> 
+</div>
+
+<!-- <div class="el1">
+    
+    <h3>jevelin <span>wdng</span></h3>
+    <ul>
+        <p>Home</p>
+        <p>Portfolio</p>
+        <p>Blog</p>
+        <p>Shop</p> 
+    </ul> 
+</div> -->
+<div class="el2" id="home"> 
+    <div class="el2a" ><img src="Home_7_slide_img_1.jpg" alt="" height="750px" width="100%"></div>
+    <img src="love symbol.png" alt="" height="50px" style="position: absolute; top: 40%; left: 45%;" data-aos="fade-down"  data-aos-duration="3000">
+    <h4 data-aos="fade-right" data-aos-duration="3000" >Wp template for</h4>
+    <h2 data-aos="fade-right" data-aos-duration="3000">Wedding planners</h2>
+    <p  data-aos="fade-up"
+    data-aos-duration="3000" style="color: rgb(189, 180, 180);">Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla convallis </p>
+    <p style="position: absolute; top: 68%; left: 40%; color: rgb(187, 176, 176);"  data-aos="fade-up"
+    data-aos-duration="3000">euismod odio scelerisque mollis.</p>
+    <button data-aos="fade-up"
+    data-aos-duration="3000">Take It For spin</button>
+</div>
+<div class="el3"> 
+    <div class="">
+    <center style=" font-size: 20px; padding-top: 10px;">Services we provide</center>
+    <p style="padding-left: 350px; font-size: 15px; width: 80%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis varius cursus. Sed rhoncus, nisl non maximus <center style="font-size: 15px;">molestie, erat quam tincidunt orci, fermentum fermentum risus enim ut nisl.</center> </p> 
+</div>
+   
+</div>
+
+<div class="el4" style="padding-top: 30px;">
+    <div class="el4a">
+        <img src="ser_img_1.jpg" alt="" width="85%" >
+        <div class="nb1"><img src="phone.jpg" alt="" height="50px" width="50px">
+        <h3 style="font-size: 20px;"> Fully responsive</h3><br></div>
+        <p style="padding-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis varius cursus. Sed rhoncus, nisl non maximus molestie, erat quam tincidunt orci, fermentum fermentum risus enim ut nisl</p>
+        <h5 style="color: lightcoral; font-size: 15px;">READ MORE</h5>
+    </div>
+    <div class="el4b" style="padding-right: 20px;">
+        <img src="ser_img_2.jpg" alt="" width="90%"><br>
+     
+         <div class="nb2"><img src="friend.jpg" alt="" height="50px" width="50px">
+            <h3  style="font-size: 20px;">Friendly support </h3><br></div>
+         <p style="padding-top: 20px;">Proin non nunc non enim dictum vulputate. Aliquam augue tortor, fringilla ac porttitor vel, lacinia nec enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae</p>
+         <h5 style="color: lightcoral; font-size: 15px;">READ MORE</h5>
+     </div>
+     <div class="el4c">
+        <img src="ser_img_3.jpg" alt="" width="83%">
+        <div class="nb3"><img src="download.jpg" alt="" style="height: 30px;" ><br><br>
+        <h3 style="padding-left:20px ; font-size: 20px;"> Highly customizable</h3><br></div>
+        <p style="padding-top: 20px;">Curabitur cursus lectus sollicitudin eros ornare pulvinar. Nulla facilisi. Quisque non lorem vel lectus porttitor volutpat et eu ante. Pellentesque sem metus, laoreet ut tellus sed, elementum aliquam neque.</p>
+        <h5 style="color: lightcoral; font-size: 15px;">READ MORE</h5>
+    </div> 
+     </div><br><br>
+
+
+
+     <div class="el13">
+      <img src="istockphoto.jpg" alt="" width="100%" height="90%">
+      <div class="el13a"><h5 style="padding-left: 50px; color: rgb(179, 109, 62);">Multi-purpose WordPress theme</h5>
+      <h3 style="font-weight: bold;">Stunning website in your pocket!</h3>
+      <p  style="padding-left: 10px; color: rgb(179, 109, 62);">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+        <p  style="padding-left: 50px; "> Cras interdum sednibh sit amet accumsan.</p>
+        <input type="email" name="email" placeholder="Enter your e-mail." style="padding: 15px; width: 500px; border-radius: 30px; border: none; "><br><br>
+        <button style="margin-left:150px; padding: 10px; border-radius: 20px; border: none; background-color: rgb(179, 109, 62); color: white;">Subscibe Now</button>
+      </div>
+      <div class="mobile" data-aos="fade-up" data-aos-duration="3500"><img src="Home_7_banner_img2.png" alt="" width="100%"></div>
+    </div>
+
+
+
+
+<div class="el5">
+<div class="el6">
+    <div class="el6a" id="Portfolio"> <center style="font-size: 20px;">Portfolio & Gallery</center>
+    <p style="padding-left: 30%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis varius cursus.  </p></div>
+   
+</div>
+</div>
+<div class="el7"> 
+    <div class="el7b">
+        <a href="#">All</a>
+        <a href="#">Art</a>
+       <a href="#">Decorations</a>
+        <a href="#">People</a>
+        <a href="#">Photography</a>
+     </div> <br><br>
+     <div class="man">
+     <div class="man1" id="image-container">
+        <img src="Home_7_gal_img1-951x1024.jpg" alt="" height="370px" class="picture">
+       <div class="np1"> <h4>Hug & Kisses</h4>
+        <p style="color: gray; font-size: 15px;" >People</p></div>
+     </div>
+     <div class="man2" id="image-container">
+        <img src="Home_7_gal_img2-1024x784.jpg" alt="" height="300px">
+        <div class="np2"><h4>Every guest counts</h4>
+        <p style="color: rgb(186, 183, 183); font-size: 15px">People</p></div>
+     </div>
+     <div class="man3" id="image-container" >
+        <img src="Home_7_gal_img3-1024x962.jpg" alt="" height="320px">
+        <div class="np3"><h4>The bouquet
+        </h4>
+        <p style="color: gray; font-size: 15px" >Art</p></div>
+     </div>
+     <div class="man4" id="image-container">
+        <img src="Home_7_gal_img4-1024x962.jpg" alt="" height="320px">
+        <div class="np4"><h4>Pretty tag</h4>
+        <p style="color: rgb(177, 174, 174); font-size: 15px">Art</p></div>
+     </div>
+     <div class="man5" id="image-container">
+        <img src="Home_7_gal_img5-951x1024.jpg" alt="" height="430px" >
+        <div class="np5"><h4>Love & sunset</h4>
+       <p style="color: rgb(210, 205, 205); font-size: 15px"> Decorations</p></div>
+     </div>
+     <div class="man6" id="image-container">
+        <img src="Home_7_gal_img6-853x1024.jpg" alt="" height="415px">
+        <div class="np6"> <h4> kissing the bride</h4>
+       <p style="color: rgb(205, 202, 202); font-size: 15px">Photography</p></div>
+     </div>
+</div>
+<div class="el8">
+    <div class="el8a"><p>Want to see more images? Just press “All images” on the right side!</p>
+  <button>ALL IMAGES</button>
+    </div>
+</div>
+
+
+
+<div class="el9">
+   <img src="groom.jpg" alt="" height="600px" width="50%">
+    <div class="el9a" data-aos="fade-left" data-aos-duration="3000"><h2 style="font-size: 25px;">Title for the masses</h2>
+    <p style="padding-top: 0px; font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sed nibh sit amet accumsan. Suspendisse posuere congue ante quis fringilla. Suspendisse dignissim, turpis sed pellentesque semper, enim lacus pulvinar augue, non posuere tellus ex quis risus.</p>
+    <p style="padding-top: 0px; font-size: 18px;">Proin nisl nibh, venenatis ut bibendum vel, mollis sit amet nibh. Integer iaculis justo lorem, maximus tristique elit venenatis nec.</p>
+   
+</div>
+</div>
+<!-- <div class="best"><h6 style="color: lightcoral; padding-left: 15px;">best tips for</h6>
+    <p style="color: white;  padding-left: 15px">grooms</p></div> -->
+
+<div class="el10"> 
+    <div class="el10a" data-aos="fade-right" data-aos-duration="3000">
+        <h2 style="padding-top: 20px; font-size: 25px;">Title for the masses</h2>
+        <h4 style="padding-top: 20px; font-size: 20px;">Responsive desing</h4>
+        <p style="padding-top: 10px; font-size: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sed nibh sit amet accumsan. Suspendisse posuere congue ante quis fringilla.</p>
+        <h4 style="padding-top: 20px; font-size: 20px;">One click install</h4>
+        <p style="padding-top: 10px; font-size: 15px;">Suspendisse dignissim, turpis sed pellentesque semper, enim lacus pulvinar augue, non posuere tellus ex quis risus</p>
+        <h4 style="padding-top: 20px; font-size: 20px;">Multi-purpose</h4>
+        <p style="padding-top: 10px; font-size: 15px;">Proin nisl nibh, venenatis ut bibendum vel, mollis sit amet nibh. Integer iaculis justo lorem, maximus tristique elit venenatis nec.</p>
+    </div>
+    <img src="lady image.jpeg" alt="" width="50%" height="600px" style="position: relative;">
+</div><br><br><br><br><br>
+
+
+
+<div class="ns">
+  <div class="slider-container">
+      <div class="testimonial active" style="padding-top: 0;">
+          <span class="rating">99</span>
+          <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 1">
+          <p>lorem ipsum dolor sit amet consectetur adipiscing elit sed suscipit augue ac enim varius bibendum Curabitur ut ultrices ante, non porttitor ante, sed at dolor rhoncus</p>
+          <p>aliquet velit sit amet viverra urna proin sit amet condimentum tellus vivamus sagittis eros sit amet pellentesque condimentum</p>
+          <span class="author">- Bershtain Saal</span>
+      </div>
+
+      <div class="testimonial">
+          <span class="rating">95</span>
+          <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User 2">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.etiam rhoncus elit aliquam facilisi pharetra. Aenean consectetur lacinia diam a tincidunt vivamus facitisis lacus</p>
+          <p>non velit suscipit Pellentesque nam ac mauris nec mi lobortis sollicitudin sed at lacus</p>
+          <span class="author">- Elizabet Bazooka</span>
+      </div>
+
+
+      <span class="nav-arrow prev">&#10094;</span>
+      <span class="nav-arrow next">&#10095;</span><br><br>
+    
+      <div class="carousel">
+        <img src="Logo_1.png" alt="Logo 1">
+        <img src="Logo_2.png" alt="Logo 2">
+        <img src="Logo_3.png" alt="Logo 3">
+        <img src="Logo_4.png" alt="Logo 4">
+        <img src="Logo_5.png" alt="Logo 4">
+      </div>
+  </div>
+</div>
+
+
+   
+
+<main class="d-flex justify-content-center">
+  <section class="d-flex justify-content-center align-items-center gap-4 flex-wrap rounded-4 p-5">
+    <div class="box">
+      <h4>Basic</h4>
+      <p class="mb-0">$<span>42</span></p>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">/month</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">clean design</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">database</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">users</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">multipurpose</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">light&fast</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);"">*</span>
+    
+    <button class="p-3 rounded-3 border-0 standard">Purchase</button>
+    </div>
+
+    <div class="box" style="padding-left: 130px;">
+      <h4>value</h4>
+      <p class="mb-0">$<span>56</span></p>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">/month</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">clean design</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">database</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">users</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">multipurpose</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">light&fast</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">*</span>
+      
+      <button class="p-3 rounded-3 border-0 standard">Purchase</button>
+    </div>
+
+    <div class="box"  style="padding-left: 130px;">
+      <h4>Premium</h4>
+      <p class="mb-0">$<span>77</span></p>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">/month</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">clean design</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">database</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">users</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">multipurpose</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">light&fast</span>
+      <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">*</span>
+      <button class="p-3 rounded-3 border-0 premium">Purchase</button>
+    </div>
+
+    
+    <div class="box"  style="padding-left: 130px;">
+        <h4>All-in-one</h4>
+        <p class="mb-0">$<span>145</span></p>
+        <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">/month</span>
+        <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">clean design</span>
+        <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">database</span>
+        <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">users</span>
+        <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">multipurpose</span>
+        <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">light&fast</span>
+        <span class="size mb-2 d-block" style="border-bottom: 1px solid rgb(180, 165, 165);">*</span>
+        <button class="p-3 rounded-3 border-0 premium">Purchase</button>
+      </div>
+  </section>
+</main>
+
+
+
+<div class="el14"> 
+  <div data-aos="fade-right" data-aos-duration="3000">
+  <p>Send us a message</p>
+  <p>Donec lacinia efficitur finibus.</p>
+  
+    <h6>Name</h6>
+    <input type="text" name="name" id="" style="width: 600px; padding: 10px;"><br><br>
+    <h6>Email</h6>
+    <input type="email" name="name" style="width: 600px; padding: 10px;"><br><br>
+    <h6>Message</h6>
+    <input type="message" name="message" id="" style="padding: 80px; width: 600px;"><br><br>
+    <h6>project budjet</h6>
+    <input type="text" name="name" id="" style="width: 600px; padding: 10px;"><br><br>
+    <button style="padding: 15px; border-radius: 50px; width: 200px; background-color:  rgb(179, 109, 62); border: none; color: white;">send message</button>
+  </div>
+  <div data-aos="fade-left" data-aos-duration="3000"><h3>Contact information</h3>
+  <p style="color: rgb(179, 171, 171);">Aenean a ullamcorper justo. Nunc convallis feugiat purus id pulvinar. Sed dapibus massa vitae nibh malesuada mattis. Phasellus interdum mi nec lorem dignissim, in volutpat dui accumsan.
+
+  </p><br>
+  <h6 style="color:  rgb(179, 109, 62);">Adress</h6>
+  <p>Street number and town name 23</p><br>
+  <h6 style="color:  rgb(179, 109, 62);">Phone</h6>
+  <p>number 342 552 521  </p><br>
+  <h6 style="color:  rgb(179, 109, 62);">Working hours</h6>
+  <p>Mon. - frie. 11AM - 19PM</p>
+
+ <div> <img src="icons8-instagram-24.png" alt="" width="30px" height="30px">
+  <img src="icons8-letter-f-64.png" alt="" width="30px" height="30px">
+  <img src="icons8-twitter-bird-48.png" alt="" width="30px" height="30px">
+  <img src="icons8-youtube-50.png" alt="" width="30px" height="30px">
+  <img src="icons8-p-50.png" alt="" width="30px" height="30px"></div>
+</div>
+</div>
+
+<div class="el15" style="padding: 70px; padding-top: 100px; ">
+  <div style="width: 500px; padding-top: 120px;" ><img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/jevelin_weddings_light.png" alt="">
+  <p style="color: rgb(170, 163, 163);">Duis semper mauris vitae purus rhoncus suscipit. Nunc dictum dapibus tellus, at viverra risus pharetra id. Nulla facilisi. Ut mollis et augue non gravida.</p>
+  <img src="icons8-instagram-24.png" alt="" width="30px" height="30px">
+  <img src="icons8-letter-f-64.png" alt="" width="30px" height="30px">
+  <img src="icons8-twitter-bird-48.png" alt="" width="30px" height="30px">
+  <img src="icons8-youtube-50.png" alt="" width="30px" height="30px">
+  <img src="icons8-p-50.png" alt="" width="30px" height="30px"></div>
+
+  
+     <div style="padding-top: 100px;">
+      <h4>Recent posts</h4>
+      <div>
+        <div style="display: flex;">
+  <img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/Home_7_blog_6.jpg" alt="" width="50px" height="50px" >
+    <div><h6 style="padding-left: 20px;">Best hairstyle for summer</h6>
+    <p style="padding-left: 20px;">By shufflehound</p></div>
+  </div>
+  </div><br>
+<div>
+      <div style="display: flex;">
+        <img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/Home_7_blog_3.jpg" alt="" width="50px" height="50px">
+       <div> <h6 style="padding-left: 20px;">Best places for celebrations</h6>
+        <p style="padding-left: 20px;"> By shufflehound</p><br></div></div>
+        <div style="display: flex;">
+          <img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/Home_7_blog_4.jpg" alt=""  width="50px" height="50px">
+          <div><h6 style="padding-left: 20px;">Not so complicated title</h6>
+          <p style="padding-left: 20px;">By shufflehound</p></div></div>
+          
+</div>
+</div>
+<div style="padding-top: 100px;">
+  <h4>Latest projects</h4>
+  <img src="Home_7_gal_img1-951x1024.jpg" alt="" width="80px" height="80px">
+  <img src="Home_7_gal_img2-1024x784.jpg" alt="" width="80px" height="80px">
+  <img src="Home_7_gal_img3-1024x962.jpg" alt="" width="80px" height="80px"><br><br>
+  <img src="Home_7_gal_img4-1024x962.jpg" alt="" width="80px" height="80px">
+  <img src="Home_7_gal_img5-951x1024.jpg" alt="" width="80px" height="80px">
+  <img src="Home_7_gal_img6-853x1024.jpg" alt="" width="80px" height="80px">
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<script>
+  let currentIndex = 0;
+  const testimonials = document.querySelectorAll(".testimonial");
+  const totalTestimonials = testimonials.length;
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+
+  function showTestimonial(index) {
+      testimonials.forEach((testimonial, i) => {
+          testimonial.classList.toggle("active", i === index);
+      });
+  }
+
+  function nextTestimonial() {
+      currentIndex = (currentIndex + 1) % totalTestimonials;
+      showTestimonial(currentIndex);
+  }
+
+  function prevTestimonial() {
+      currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
+      showTestimonial(currentIndex);
+  }
+
+  nextBtn.addEventListener("click", nextTestimonial);
+  prevBtn.addEventListener("click", prevTestimonial);
+
+  // Auto-slide every 5 seconds
+  setInterval(nextTestimonial, 5000);
+</script>
+
+
+
+
+
+<script>
+  let carousel = document.querySelector('.carousel');
+  setInterval(() => {
+      carousel.appendChild(carousel.firstElementChild);
+  }, 2000);
+</script>
+
+<script>
+  AOS.init();
+</script>
+</body>
+</html>   

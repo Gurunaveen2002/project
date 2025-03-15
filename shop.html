@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    ul>li{
+            list-style:  none;
+         
+        }
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(244, 237, 237);
+    padding: 50px;
+    align-items: center;
+   
+}
+ul{
+    display: flex;
+    gap: 20px;
+}
+
+.input1{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.input{
+   padding: 50px;
+  
+}
+.product{
+    padding: 50px;
+    
+}
+.pic1{
+    box-shadow: 1px 1px 3px 1px;
+    width: 26.3%;
+    
+}
+.pic2{
+    box-shadow: 1px 1px 3px 1px;
+    width: 26.3%;
+    
+}
+
+.el15{
+ background-image: url(image.avif);
+
+ background-repeat: no-repeat;
+ height: 80vh;
+
+}
+  .el15{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+  }
+
+  
+
+  li>a{
+    list-style: none;
+    text-decoration: none;
+  }
+  
+
+
+
+/* Default styles */
+
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .input1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .input1 p {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .product {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .input1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .input1 input {
+        width: 90%;
+    }
+    
+    .input1 p {
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    .product, .pic1, .pic2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .input1 input {
+        width: 100%;
+    }
+    
+    .input1 p {
+        text-align: center;
+        padding-left: 0;
+    }
+    
+    .pic1 img, .pic2 img {
+        max-width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <h2 style="padding-left: 70px;">Blog</h2>
+        <ul style="padding-right:30px ;">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="cards.html">Blog</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+    </nav>
+<div class="input">
+    <div class="input1">
+    <input type="text" name="name" id="" placeholder="Search Products" style="padding: 15px; width: 300px;">
+    <input type="text" name="name" id="" placeholder="Default Sorting" style="padding: 15px; width: 300px;">
+    <p style="padding-left: 500px;">Showing all 2 results</p></div>
+</div>
+</div>
+
+<div style="display: flex; gap: 30px;">
+<div class="product">
+    <h5>Product Categories</h5><br>
+                <div style="display: flex; "><p style="border-bottom: 1px solid rgb(188, 183, 183);width: 300px ; ">Accessories</p>
+                <p  style=" background-color: rgb(213, 203, 203); border-radius: 3px; padding: 2px;">1</p>
+            </div><br>
+            <div style="display: flex;">
+                <p style="border-bottom: 1px solid  rgb(188, 183, 183); width: 300px ; ">Inspiration </p><br>
+                <p  style=" background-color: rgb(213, 203, 203); border-radius: 3px; padding: 2px;">1</p>
+              </div><br>
+             
+               <div style="display: flex;">
+                <p style="border-bottom: 1px solid  rgb(188, 183, 183); width: 300px ; ">Flower</p><br>
+                <p  style=" background-color: rgb(213, 203, 203); border-radius: 3px; padding: 2px;">1</p><br>
+               </div><br>
+                <div style="display: flex;">
+                    <p style="border-bottom: 1px solid  rgb(188, 183, 183);width: 300px ; ">Fresh </p><br>
+                    <p  style=" background-color: rgb(213, 203, 203); border-radius: 3px; padding: 2px;">1</p>
+                </div><br>
+                <div style="display: flex;">
+                    <p style="border-bottom: 1px solid  rgb(188, 183, 183); width: 300px ;">Uncategorized </p><br>
+                    <p style="background-color: rgb(213, 203, 203); border-radius: 3px; padding: 2px;">1</p>
+                </div><br>
+
+              
+                    <h4>Top rated products</h4><br>
+                    <div>
+                      <div style="display: flex;">
+                        <img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/photo-1456361999283-62361632122a-768x512.jpg" alt="" width="50px" height="50px" >
+                  <div><h6 style="padding-left: 20px;">Flower bouquets one</h6>
+                  <p style="padding-left: 20px;">£25.50</p></div>
+                </div><br>
+                <div style="display: flex;">
+                    <img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/Home_7_shop_img_1.jpg" alt="" width="50px" height="50px">
+                   <div> <h6 style="padding-left: 20px;">Flower bouquets one</h6>
+                    <p style="padding-left: 20px;"> £29.99</p><br></div></div>
+                </div>
+            </div>
+        
+                <div class="pic1">
+                    <img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/Home_7_shop_img_1.jpg" alt="" width="400px" height="300px">
+                    <h2 style="padding-left: 20px;">Flower bouquets one</h2>
+                    <p style="padding-left: 20px;">Flower,fresh</p>
+                    <p style="padding-left: 20px;">£25.50</p><br>
+                    <p style="padding-left: 20px;">ADD TO CART <span><img src="https://img.icons8.com/?size=100&id=23169&format=png" alt="" width="30px" height="20px"></span></p>
+                </div>
+                <div class="pic2">
+                    <img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/photo-1456361999283-62361632122a-768x512.jpg" alt="" width="400px" height="300px">
+                    <h2 style="padding-left: 20px;">Flower bouquets one</h2>
+                    <p style="padding-left: 20px;">Accessories</p>
+                    <p style="padding-left: 20px;">£29.99</p><br>
+                    <p style="padding-left: 20px;">ADD TO CART <span><img src="https://img.icons8.com/?size=100&id=23169&format=png" alt="" width="30px" height="20px"></span></p>
+                </div>
+            </div><br><br>
+
+                
+<div class="el15" style="padding: 70px; padding-top: 100px; ">
+    <div style="width: 500px; padding-top: 120px;" ><img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/jevelin_weddings_light.png" alt="">
+    <p style="color: rgb(170, 163, 163);">Duis semper mauris vitae purus rhoncus suscipit. Nunc dictum dapibus tellus, at viverra risus pharetra id. Nulla facilisi. Ut mollis et augue non gravida.</p>
+    <img src="icons8-instagram-24.png" alt="" width="30px" height="30px">
+    <img src="icons8-letter-f-64.png" alt="" width="30px" height="30px">
+    <img src="icons8-twitter-bird-48.png" alt="" width="30px" height="30px">
+    <img src="icons8-youtube-50.png" alt="" width="30px" height="30px">
+    <img src="icons8-p-50.png" alt="" width="30px" height="30px"></div>
+  
+    
+       <div style="padding-top: 100px;">
+        <h4>Recent posts</h4><br>
+        <div>
+          <div style="display: flex;">
+    <img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/Home_7_blog_6.jpg" alt="" width="50px" height="50px" >
+      <div><h6 style="padding-left: 20px;">Best hairstyle for summer</h6>
+      <p style="padding-left: 20px;">By shufflehound</p></div>
+    </div>
+    </div><br>
+  <div>
+        <div style="display: flex;">
+          <img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/Home_7_blog_3.jpg" alt="" width="50px" height="50px">
+         <div> <h6 style="padding-left: 20px;">Best places for celebrations</h6>
+          <p style="padding-left: 20px;"> By shufflehound</p><br></div></div>
+          <div style="display: flex;">
+            <img src="https://jevelin.shufflehound.com/wedding/wp-content/uploads/sites/3/2016/05/Home_7_blog_4.jpg" alt=""  width="50px" height="50px">
+            <div><h6 style="padding-left: 20px;">Not so complicated title</h6>
+            <p style="padding-left: 20px;">By shufflehound</p></div></div>
+            
+  </div>
+  </div>
+  <div style="padding-top: 100px;">
+    <h4>Latest projects</h4><br>
+    <img src="Home_7_gal_img1-951x1024.jpg" alt="" width="80px" height="80px">
+    <img src="Home_7_gal_img2-1024x784.jpg" alt="" width="80px" height="80px">
+    <img src="Home_7_gal_img3-1024x962.jpg" alt="" width="80px" height="80px"><br><br>
+    <img src="Home_7_gal_img4-1024x962.jpg" alt="" width="80px" height="80px">
+    <img src="Home_7_gal_img5-951x1024.jpg" alt="" width="80px" height="80px">
+    <img src="Home_7_gal_img6-853x1024.jpg" alt="" width="80px" height="80px">
+  </div>
+  </div>
+  </div>
+  
+</body>
+</html>
